@@ -1,0 +1,123 @@
+# 📤 GitHub Upload Guide
+
+Follow these steps exactly to upload your project to GitHub.
+
+---
+
+## STEP 1 — Install Git (if not already installed)
+
+Check if Git is installed:
+```
+git --version
+```
+
+If not installed → Download from: https://git-scm.com/download/win
+Install with default settings.
+
+---
+
+## STEP 2 — Create a GitHub account
+
+Go to https://github.com and sign up (free).
+
+---
+
+## STEP 3 — Create a new repository on GitHub
+
+1. Click the "+" button → "New repository"
+2. Repository name: `age_gender_detector`
+3. Description: `Age and Gender Detection using InsightFace + OpenCV`
+4. Set to PUBLIC (so others can see it)
+5. ❌ Do NOT check "Add README" (we already have one)
+6. Click "Create repository"
+
+---
+
+## STEP 4 — Open terminal / command prompt
+
+Navigate to your project folder:
+```
+cd path\to\age_gender_detector
+```
+
+Example:
+```
+cd C:\Users\YourName\Desktop\age_gender_detector
+```
+
+---
+
+## STEP 5 — Initialize Git and upload
+
+Run these commands ONE BY ONE:
+
+```bash
+# 1. Initialize git in your project folder
+git init
+
+# 2. Add all files
+git add .
+
+# 3. Make your first commit
+git commit -m "Initial commit: Age & Gender Detector app"
+
+# 4. Set branch name to main
+git branch -M main
+
+# 5. Connect to your GitHub repo (REPLACE with your actual URL)
+git remote add origin https://github.com/YOUR_USERNAME/age_gender_detector.git
+
+# 6. Push to GitHub
+git push -u origin main
+```
+
+GitHub will ask for your username and password (use a Personal Access Token as password).
+
+---
+
+## STEP 6 — Create a Personal Access Token (for password)
+
+GitHub no longer accepts your account password for git push.
+
+1. Go to https://github.com/settings/tokens
+2. Click "Generate new token (classic)"
+3. Name it: `age_detector_push`
+4. Expiration: 90 days
+5. Check the "repo" checkbox
+6. Click "Generate token"
+7. COPY the token immediately (you won't see it again)
+8. Use this token as your password when git push asks
+
+---
+
+## STEP 7 — Verify upload
+
+Go to: https://github.com/YOUR_USERNAME/age_gender_detector
+
+You should see all your files:
+- app.py
+- requirements.txt
+- README.md
+- .gitignore
+
+---
+
+## Future updates (after making changes to code)
+
+```bash
+git add .
+git commit -m "Describe what you changed"
+git push
+```
+
+---
+
+## Useful Git commands
+
+| Command | What it does |
+|---------|-------------|
+| `git status` | See what files changed |
+| `git log` | See commit history |
+| `git add .` | Stage all changes |
+| `git commit -m "message"` | Save a snapshot |
+| `git push` | Upload to GitHub |
