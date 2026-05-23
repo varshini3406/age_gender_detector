@@ -4,8 +4,8 @@ A web app that detects **age and gender** from uploaded photos using deep learni
 
 Built with **InsightFace buffalo_l** + **OpenCV** + **Streamlit**.
 
-👉 **[Live Demo](https://YOUR-APP-NAME.streamlit.app)** ← update this after deploy
-
+ **[Live Demo](https://agegenderdetector-tcczawbgwkzbgnb5wfhyad.streamlit.app)**
+ 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.32%2B-red)
 ![InsightFace](https://img.shields.io/badge/InsightFace-buffalo__l-orange)
